@@ -1,0 +1,112 @@
+<div class="flex justify-between min-h-screen bg-cyan-50">
+  <%# Card Container %>
+  <div class="flex flex-col mx-auto bg-white  space-y-6 rounded-lg p-6 m-3">
+    <%# Menu Container %>
+    <nav class="flex flex-col items-center space-y-2 md:flex-row md:justify-end md:space-y-0 md:space-x-4">
+      <div class="group">
+        <%= link_to "Vector", "#" %>
+        <div class="border-b-2 border-black mt-2 opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <%= link_to "Illustrations", "#" %>
+        <div class="border-b-2 border-black mt-2 opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <%= link_to "Images", "#" %>
+        <div class="border-b-2 border-black mt-2 opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+      <div class="group">
+        <%= link_to "Icons", "#" %>
+        <div class="border-b-2 border-black mt-2 opacity-0 group-hover:opacity-100 duration-500"></div>
+      </div>
+    </nav>
+
+    <div class="flex flex-col space-y-4 md:flex-row md:justify-between">
+      <%# Search Container %>
+      <div class="flex border-b items-center">
+        <input
+          type="text"
+          placeholder="Search"
+          class="border-none ml-6"
+        />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+      </div>
+
+      <%= button_to "Upload", "#", class: "w-full bg-black border border-black text-white py-4 rounded-lg
+        hover:text-black hover:bg-white md:w-40" %>
+    </div>
+
+    <%# Gallery Container %>
+    <div class="grid gap-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div class="relative group">
+        <%= image_tag "image1", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+      <div class="relative group">
+        <%= image_tag "image2", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+      <div class="relative group">
+        <%= image_tag "image3", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+      <div class="relative group">
+        <%= image_tag "image4", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+      <div class="relative group">
+        <%= image_tag "image5", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+      <div class="relative group">
+        <%= image_tag "image6", class: "w-72" %>
+        <div class="absolute flex justify-between bottom-0 left-0 right-0 p-4 text-center bg-black text-white opacity-0
+          group-hover:bg-opacity-50 group-hover:opacity-100">
+          <div>
+            <p class="text-sm">Abstract Painting</p>
+            <p class="text-sm">245 likes - 35 Shares</p>
+          </div>
+          <%= image_tag "bookmark.svg" %>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
